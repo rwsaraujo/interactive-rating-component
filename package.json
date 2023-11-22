@@ -1,0 +1,16 @@
+{
+  "name": "interactive-rating-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the 'Interactive Rating Component' challenge on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/style/style.scss build/style/style.css --style compressed",
+    "uglifyjs": "uglifyjs src/js/script.js -c -o build/js/script.js"
+  },
+  "author": "Raphael Araujo",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5",
+    "uglify-js": "^3.17.4"
+  }
+}

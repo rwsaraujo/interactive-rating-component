@@ -1,0 +1,13 @@
+@use "typography";
+@use "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.9375rem; // 15px
+  font-weight: 400;
+  line-height: 1;
+  font-family: typography.$paragraph-font;
+  color: colors.$white;
+}

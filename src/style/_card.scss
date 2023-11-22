@@ -1,0 +1,89 @@
+@use "colors";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: colors.$very-dark-blue;
+}
+
+// Card - Initial state
+.card,
+.card__rated {
+  background: linear-gradient(
+    180deg,
+    hsl(213, 19%, 18%) 0%,
+    hsl(216, 12%, 8%) 100%
+  );
+  max-width: 410px;
+  min-height: 415px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-img {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(148, 157, 171, 0.1);
+  margin-bottom: 35px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  color: colors.$light-grey;
+}
+
+.rating {
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.rating-options {
+  background-color: rgba(148, 157, 171, 0.1);
+  color: colors.$light-grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.rating-options:hover {
+  background-color: colors.$orange;
+  color: colors.$white;
+  cursor: pointer;
+}
+
+// Rating given by user
+.rating-options__selected {
+  background-color: colors.$light-grey;
+  color: colors.$white;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+}
+
+// User rating
+.card__rated {
+  text-align: center;
+}
+
+.div-img__rated {
+  margin-bottom: 35px;
+}
+
+.badge {
+  background-color: rgba(148, 157, 171, 0.1);
+  color: colors.$orange;
+  padding: 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
